@@ -54,14 +54,14 @@ insert into doctors (doctor_id, full_name, specialization, year_of_experience, c
 ('D007', 'Do Minh Khoa', 'Chấn thương', '7', '450.00'),
 ('D008', 'Bui Ngoc Anh', 'Sản khoa', '18', '850.00');
 
-insert into appointment (appointment_id, patient_id, doctor_id, appointment_date, status) values
+insert into appointments (appointment_id, patient_id, doctor_id, appointment_date, status) values
 ('1', 'P001', 'D001', '2025-03-01 08:00:00', 'completed'),
 ('2', 'P002', 'D002', '2025-03-01 09:30:00', 'completed'),
 ('3', 'P003', 'D003', '2025-03-02 10:00:00', 'scheduled'),
 ('4', 'P004', 'D004', '2025-03-02 14:00:00', 'completed'),
 ('5', 'P005', 'D005', '2025-03-03 15:30:00', 'cancelled');
 
-insert into payment (payment_id, appointment_id, payment_method, payment_date, amount) values
+insert into payments (payment_id, appointment_id, payment_method, payment_date, amount) values
 ('1', '1', 'cash', '2025-03-01 08:45:00', '500.00'),
 ('2', '2', 'credit card', '2025-03-01 10:00:00', '700.00'),
 ('3', '3', 'bank transfer', '2025-03-02 15:00:00', '900.00'),
